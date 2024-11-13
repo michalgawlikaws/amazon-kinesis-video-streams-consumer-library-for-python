@@ -168,7 +168,7 @@ class KvsConsumerLibrary(Thread):
                 #############################################
                 # Parse current byte buffer to MKV EBML DOM like object using EBMLite
                 #############################################
-                ffragement_intrum_dom = self.schema.load(BytesIO(chunk_buffer), headers=True)
+                fragement_intrum_dom = self.schema.load(BytesIO(chunk_buffer), headers=True)
 
                 #############################################
                 #  Process a complete fragment if its arrived and send to the on_fragment_arrived callback. 
